@@ -39,7 +39,7 @@ norm_features = normalize(W)
 
 df = pd.DataFrame(norm_features, index=df['content'])
 
-current_topic = df.iloc[23]  
+current_topic = df.iloc[0]  
 
 similarity = df.dot(current_topic)
 
